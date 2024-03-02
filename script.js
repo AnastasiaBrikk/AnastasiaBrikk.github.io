@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let formData = new FormData(form);
 
     if (error === 0) {
-        form.classList.add('_sending');
-      let response = await fetch("sendemail.php", {
-        method: "POST",
-        body: formData
+      form.classList.add('_sending');
+      let response = await fetch('sendmail.php', {
+        method: 'POST',
+        body: formData,
       });
-      if(response.ok) {
+      if (response.ok) {
         let result = await response.json();
         alert(result.message);
         form.reset();
         form.classList.remove('_sending');
-      }else {
+      } else {
         alert("Ошибка");
         form.classList.remove('_sending');
       }
@@ -52,13 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-
     return error;
   }
 
   function formAddError(input) {
-    input.parentElement.classList.add("_error");
-    input.classList.add("_error");
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
   }
 
   function formRemoveError(input) {
