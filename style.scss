@@ -180,6 +180,7 @@ a {
 
     &__button {
         // width: 250px;
+        display: inline-block;
         padding: 20px 30px;
         background-color: #F69040;
         color: white;
@@ -412,5 +413,60 @@ footer {
     & span {
         font-size: 15px;
         color: #fff;
+    }
+}
+
+
+// services page style 
+.services {
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    &__item {
+        max-width: 565px;
+        width: 48%;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__img {
+        width: 100%;
+        height: 365px;
+    }
+
+    &__text {
+        padding: 20px 10px;
+    }
+
+    &__dsc {
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 30px;
+    }
+
+    &__price {
+        font-size: 18px;
+        font-weight: 400;
+        color: #F27E23;
+        text-align: end;
     }
 }

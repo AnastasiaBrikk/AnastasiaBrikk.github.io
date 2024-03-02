@@ -15,6 +15,7 @@ $mail->setFrom('nastya.proskuryakova.98@mail.ru', 'Сногинова Анаст
 
 //to
 $mail->addAddress('nahua.proskuryakova.98@gmail.com');
+// rbcustomrussia@gmail.com
 
 //theme
 $mail->Subject = 'Заявка с сайта RB Carbon';
