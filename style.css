@@ -116,9 +116,7 @@ a {
   max-width: 221px;
   height: 140px;
   text-align: center;
-  padding-top: 29px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 28px 30px;
 }
 .about__ol {
   padding-left: 35px;
