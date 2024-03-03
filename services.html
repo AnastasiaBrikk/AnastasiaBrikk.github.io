@@ -11,8 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- Текстовое наполнение. Адаптив. -->
 
 <body>
     <header class="header center">
@@ -50,7 +53,18 @@
             <div class="services__item">
                 <h3 class="services__title">Карбоновые накладки кузова</h3>
                 <div class="services__content">
-                    <img src="/img/services-item1.jpg" alt="photo" class="services__img">
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/img/services-item1.jpg" alt="Image 1"></div>
+                            <div class="swiper-slide"><img src="/img/services-img1-2.jpg" alt="Image 2"></div>
+                            <div class="swiper-slide"><img src="/img/services-img1-3.jpg" alt="Image 3"></div>
+                        </div>
+                        
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
                     <div class="services__text">
                         <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
                             voluptates, illum provident temporibus molestias aliquid ex debitis libero, at laudantium
@@ -67,7 +81,17 @@
             <div class="services__item">
                 <h3 class="services__title">Ламинация карбоном</h3>
                 <div class="services__content">
-                    <img src="/img/services-item2.jpg" alt="photo" class="services__img">
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/img/services-item2.jpg" alt="Image 1"></div>
+                            <div class="swiper-slide"><img src="/img/services-img2-2.jpg" alt="Image 2"></div>
+                            <div class="swiper-slide"><img src="/img/services-img2-3.jpg" alt="Image 3"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
                     <div class="services__text">
                         <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
                             voluptates,
@@ -88,12 +112,22 @@
             <div class="services__item">
                 <h3 class="services__title">Отделка салона карбоном</h3>
                 <div class="services__content">
-                    <img src="/img/services-item3.jpg" alt="photo" class="services__img">
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/img/services-item3.jpg" alt="Image 1"></div>
+                            <div class="swiper-slide"><img src="/img/services-img3-2.jpg" alt="Image 2"></div>
+                            <div class="swiper-slide"><img src="/img/services-img3-2.jpg" alt="Image 3"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
                     <div class="services__text">
                         <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
                             voluptates, illum provident temporibus molestias aliquid ex debitis libero, at laudantium
                             eveniet ab eos! Quas similique quo earum assumenda rem corporis vero possimus dolores amet?
-                            </p>
+                        </p>
                         <p class="services__price">
                             <span class="services__price_span">Ценовые диапазоны</span>
                         </p>
@@ -104,13 +138,26 @@
             <div class="services__item">
                 <h3 class="services__title">Услуга</h3>
                 <div class="services__content">
-                    <img src="/img/services-item4.jpg" alt="photo" class="services__img">
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/img/services-item4.jpg" alt="Image 1"></div>
+                            <div class="swiper-slide"><img src="/img/services-item4.jpg" alt="Image 2"></div>
+                            <div class="swiper-slide"><img src="/img/services-item4.jpg" alt="Image 3"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
                     <div class="services__text">
                         <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-                            voluptates, illum provident temporibus molestias aliquid ex debitis libero, at laudantium
+                            voluptates, illum provident temporibus molestias aliquid ex debitis libero, at
+                            laudantium
                             eveniet ab eos! Molestiae corrupti ea tenetur exercitationem
-                            sit consequuntur tempore ex quis? Adipisci deserunt nulla, inventore velit earum distinctio
-                            recusandae corrupti exercitationem quaerat praesentium est error quos at illum iste officia,
+                            sit consequuntur tempore ex quis? Adipisci deserunt nulla, inventore velit earum
+                            distinctio
+                            recusandae corrupti exercitationem quaerat praesentium est error quos at illum iste
+                            officia,
                             consectetur dignissimos vero sit?</p>
                         <p class="services__price">
                             <span class="services__price_span">Ценовые диапазоны</span>
@@ -159,7 +206,8 @@
     <footer class="footer">
         <span class="footer-text">© All Rights Reserved 2024</span>
     </footer>
-
+    <script type="module" src="swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="script.js"></script>
 
 </body>

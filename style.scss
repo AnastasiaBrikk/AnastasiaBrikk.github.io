@@ -448,11 +448,6 @@ footer {
 
     }
 
-    &__img {
-        width: 100%;
-        height: 365px;
-    }
-
     &__text {
         padding: 20px 10px;
     }
@@ -469,4 +464,22 @@ footer {
         color: #F27E23;
         text-align: end;
     }
+}
+
+.swiper {
+    width: 100%;
+    height: 365px;
+  }
+
+.swiper-slide img {
+    width: 100%;
+    height: 365px;
+    border-radius: 9px;
+}
+
+.swiper-button-prev {
+    color: #878787;
+}
+.swiper-button-next {
+    color: #878787;
 }
