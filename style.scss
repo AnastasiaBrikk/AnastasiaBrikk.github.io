@@ -272,6 +272,7 @@ a {
         padding: 27px 25px;
         box-shadow: 1px 1px .4em #878787;
         position: relative;
+        background-color: #fff;
 
     }
 
@@ -403,12 +404,13 @@ a {
 }
 
 footer {
-    height: 60px;
+    min-height: 60px;
     background-color: #1C1C1C;
     opacity: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 
     & span {
         font-size: 15px;
@@ -482,4 +484,78 @@ footer {
 }
 .swiper-button-next {
     color: #878787;
+}
+
+// portfolio page style
+
+.portfolio {
+    margin-bottom: 100px;
+    &__title {
+        text-align: center;
+        font-size: 20;
+        margin-bottom: 40px;
+    }
+
+    &__nav {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    &__imgs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 65px;
+    }
+
+    &__img {
+        max-width: 565px;
+        border-radius: 5px;
+    }
+
+    &__dsc {
+        font-size: 18px;
+        color: #1C1C1C;
+        line-height: 30px;
+        letter-spacing: 5;
+
+    }
+
+    &__hr {
+        width: 100%;
+        margin: 70px 0;
+        height: 1px;
+    }
+}
+
+.feedback {
+    
+    background-color: #5e3b8016;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ & img {
+    max-width: 520px;
+    margin: 120px 540px;
+}}
+
+
+// Contacts page style 
+
+.contact {
+    &__box {
+        margin-bottom: 110px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__text p {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 2;
+        line-height: 26px;
+        padding-bottom: 20px;
+    }
 }
