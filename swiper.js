@@ -5,4 +5,8 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
 });

@@ -394,12 +394,12 @@ footer span {
   text-align: end;
 }
 
-.swiper {
+.services__content .swiper {
   width: 100%;
   height: 365px;
 }
 
-.swiper-slide img {
+.services__swiper-img {
   width: 100%;
   height: 365px;
   border-radius: 9px;
@@ -413,6 +413,10 @@ footer span {
   color: #878787;
 }
 
+.swiper-pagination {
+  --swiper-theme-color: #878787;
+}
+
 .portfolio {
   margin-bottom: 100px;
 }
@@ -423,7 +427,7 @@ footer span {
 }
 .portfolio__nav {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 60px;
   font-size: 18px;
 }
 .portfolio__imgs {
@@ -441,11 +445,38 @@ footer span {
   color: #1C1C1C;
   line-height: 30px;
   letter-spacing: 5;
+  padding: 50px 60px;
 }
 .portfolio__hr {
   width: 100%;
   margin: 70px 0;
   height: 1px;
+}
+.portfolio__imgs-before {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.portfolio__imgs-before img {
+  height: 365px;
+  max-width: 547px;
+  width: 100%;
+  border-radius: 5px;
+}
+.portfolio__video {
+  width: 900px;
+  height: 450px;
+  background-color: #bbbbbb;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 225px;
+}
+.portfolio__imgs-swiper .swiper {
+  max-width: 900px;
+  height: auto;
+}
+.portfolio__swiper-img {
+  width: 100%;
 }
 
 .feedback {
@@ -473,7 +504,7 @@ footer span {
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
-  .center {
+  .padding {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -556,7 +587,7 @@ footer span {
   }
 }
 @media (max-width: 767px) {
-  .center {
+  .padding {
     padding-left: 8px;
     padding-right: 8px;
   }

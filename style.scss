@@ -467,12 +467,12 @@ footer {
     }
 }
 
-.swiper {
+.services__content .swiper {
     width: 100%;
     height: 365px;
 }
 
-.swiper-slide img {
+.services__swiper-img {
     width: 100%;
     height: 365px;
     border-radius: 9px;
@@ -487,7 +487,9 @@ footer {
 }
 
 // portfolio page style
-
+.swiper-pagination {
+    --swiper-theme-color: #878787;
+}
 .portfolio {
     margin-bottom: 100px;
 
@@ -499,7 +501,7 @@ footer {
 
     &__nav {
         text-align: center;
-        margin-bottom: 16px;
+        margin-bottom: 60px;
         font-size: 18px;
     }
 
@@ -520,6 +522,7 @@ footer {
         color: #1C1C1C;
         line-height: 30px;
         letter-spacing: 5;
+        padding: 50px 60px;
 
     }
 
@@ -528,10 +531,41 @@ footer {
         margin: 70px 0;
         height: 1px;
     }
+
+    &__imgs-before {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & img {
+            height: 365px;
+            max-width: 547px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    &__video {
+        width: 900px;
+        height: 450px;
+        background-color: #bbbbbb;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 225px;
+    }
+
+    &__imgs-swiper .swiper {
+        max-width: 900px;
+        height: auto;
+    }
+
+    &__swiper-img {
+        width: 100%;
+    }
+
+
 }
 
 .feedback {
-
     background-color: #5e3b8016;
     display: flex;
     justify-content: center;
@@ -565,7 +599,7 @@ footer {
 
 // Tablet adaptive
 @media (min-width: 767px) and (max-width: 1023px) {
-    .center {
+    .padding {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -670,7 +704,7 @@ footer {
 
 // Mobile adaptive
 @media (max-width: 767px) {
-    .center {
+    .padding {
         padding-left: 8px;
         padding-right: 8px;
     }
