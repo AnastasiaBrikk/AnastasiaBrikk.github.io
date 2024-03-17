@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
 
 <!-- Текстовое наполнение. Адаптив. -->
 
 <body>
-    <header class="header center">
+    <header class="header center padding">
         <a href="index.html"><img src="img/logo.svg" alt="mainlogo" class="header__mainlogo"></a>
 
         <nav class="header__nav">
@@ -29,13 +30,13 @@
         </nav>
         <div class="header__contacts">
             <div class="header__adress">Санкт-Петербург<br>пер. Детский, 5Д<br>пр-кт Юрия Гагарина, 32к6</div>
-            <div class="header__number">+79119948474</div>
+            <div class="header__number">+79117571001</div>
             <div class="header__medias">
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-insta.svg" alt="instagram"
+                <a href="#" class="header__media"><img src="/img/instagram.svg" alt="instagram"
                         class="header__media-logo"></a>
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-watsapp.svg" alt="watsapp"
+                <a href="#" class="header__media"><img src="/img/watsapp.svg" alt="watsapp"
                         class="header__media-logo"></a>
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-youtube.svg" alt="youtube"
+                <a href="#" class="header__media"><img src="/img/youtube.svg" alt="youtube"
                         class="header__media-logo"></a>
             </div>
         </div>
@@ -47,129 +48,128 @@
         </h1>
     </div>
 
-    <main class="main center">
-        <h2 class="about__title">Наши услуги</h2>
-        <div class="services__box">
-            <div class="services__item">
-                <h3 class="services__title">Карбоновые накладки кузова</h3>
-                <div class="services__content">
 
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-item1.jpg" alt="Image 1"></div>
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-img1-2.jpg" alt="Image 2"></div>
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-img1-3.jpg" alt="Image 3"></div>
+    <main class="main">
+        <div class="services">
+            <h2 class="about__title">Наши услуги</h2>
+            <div class="services__box center">
+                <div class="services__item">
+                    <h3 class="services__title">Карбоновые накладки кузова</h3>
+                    <div class="services__content">
+
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-item1.jpg" alt="Image 1"></div>
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-img1-2.jpg" alt="Image 2"></div>
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-img1-3.jpg" alt="Image 3"></div>
+                            </div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
 
-                    <div class="services__text">
-                        <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-                            voluptates, illum provident temporibus molestias aliquid ex debitis libero, at laudantium
-                            eveniet ab eos! Quas similique quo earum assumenda rem corporis vero possimus dolores amet?
-                            Ullam iusto autem animi ab tempora omnis at necessitatibus sequi quo, veritatis eos eaque
-                            dolores est impedit voluptates eligendi eum facilis inventore ut ducimus? Eum dolor animi
-                            eveniet debitis, nulla pariatur odio tenetur.</p>
-                        <p class="services__price">Ценовые диапазоны
-                        </p>
+                        <div class="services__text">
+                            <p class="services__dsc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                                unde ab iure ullam amet ducimus eos! Fugiat magnam modi soluta!</p>
+                            <p class="services__price">Ценовые диапазоны
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="services__item">
-                <h3 class="services__title">Ламинация карбоном</h3>
-                <div class="services__content">
+                <div class="services__item">
+                    <h3 class="services__title">Ламинация карбоном</h3>
+                    <div class="services__content">
 
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-item2.jpg" alt="Image 1"></div>
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-img2-2.jpg" alt="Image 2"></div>
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-img2-3.jpg" alt="Image 3"></div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-item2.jpg" alt="Image 1"></div>
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-img2-2.jpg" alt="Image 2"></div>
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-img2-3.jpg" alt="Image 3"></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
 
-                    <div class="services__text">
-                        <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-                            voluptates,
-                            illum provident temporibus molestias aliquid ex debitis libero, at laudantium eveniet ab
-                            eos!
-                            Quas similique quo earum assumenda rem corporis vero possimus dolores amet? Ullam iusto
-                            autem
-                            animi ab tempora omnis at necessitatibus sequi quo, veritatis eos eaque dolores est impedit
-                            voluptates eligendi eum facilis inventore ut ducimus? Eum dolor animi eveniet debitis, nulla
-                            pariatur odio tenetur.</p>
-                        <p class="services__price">
-                            <span class="services__price_span">Ценовые диапазоны</span>
-                        </p>
+                        <div class="services__text">
+                            <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+                                suscipit ea nostrum asperiores libero? Cupiditate sunt atque facere cumque? Accusamus.
+                            </p>
+                            <p class="services__price">
+                                <span class="services__price_span">Ценовые диапазоны</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="services__item">
-                <h3 class="services__title">Отделка салона карбоном</h3>
-                <div class="services__content">
+                <div class="services__item">
+                    <h3 class="services__title">Отделка салона карбоном</h3>
+                    <div class="services__content">
 
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-item3.jpg" alt="Image 1"></div>
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-img3-2.jpg" alt="Image 2"></div>
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-img3-2.jpg" alt="Image 3"></div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-item3.jpg" alt="Image 1"></div>
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-img3-2.jpg" alt="Image 2"></div>
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-img3-2.jpg" alt="Image 3"></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
 
-                    <div class="services__text">
-                        <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-                            voluptates, illum provident temporibus molestias aliquid ex debitis libero, at laudantium
-                            eveniet ab eos! Quas similique quo earum assumenda rem corporis vero possimus dolores amet?
-                        </p>
-                        <p class="services__price">
-                            <span class="services__price_span">Ценовые диапазоны</span>
-                        </p>
+                        <div class="services__text">
+                            <p class="services__dsc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+                                cupiditate distinctio! Obcaecati ipsa explicabo corrupti adipisci perspiciatis, nam
+                                deserunt a.
+                            </p>
+                            <p class="services__price">
+                                <span class="services__price_span">Ценовые диапазоны</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="services__item">
-                <h3 class="services__title">Услуга</h3>
-                <div class="services__content">
+                <div class="services__item">
+                    <h3 class="services__title">Услуга</h3>
+                    <div class="services__content">
 
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-item4.jpg" alt="Image 1"></div>
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-item4.jpg" alt="Image 2"></div>
-                            <div class="swiper-slide"><img class="services__swiper-img" src="/img/services-item4.jpg" alt="Image 3"></div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-item4.jpg" alt="Image 1"></div>
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-item4.jpg" alt="Image 2"></div>
+                                <div class="swiper-slide"><img class="services__swiper-img"
+                                        src="/img/services-item4.jpg" alt="Image 3"></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
 
-                    <div class="services__text">
-                        <p class="services__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-                            voluptates, illum provident temporibus molestias aliquid ex debitis libero, at
-                            laudantium
-                            eveniet ab eos! Molestiae corrupti ea tenetur exercitationem
-                            sit consequuntur tempore ex quis? Adipisci deserunt nulla, inventore velit earum
-                            distinctio
-                            recusandae corrupti exercitationem quaerat praesentium est error quos at illum iste
-                            officia,
-                            consectetur dignissimos vero sit?</p>
-                        <p class="services__price">
-                            <span class="services__price_span">Ценовые диапазоны</span>
-                        </p>
+                        <div class="services__text">
+                            <p class="services__dsc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+                                necessitatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo,
+                                perferendis.</p>
+                            <p class="services__price">
+                                <span class="services__price_span">Ценовые диапазоны</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="form center">
-        <h3 class="form__heading">Вы можете получить бесплатную консультацию от наших ведущих специалистов,
+    <section class="form center padding">
+        <h3 class="form__heading">Получите бесплатную консультацию от наших ведущих специалистов,
             оставив
             заявку на сайте или позвонив нам по указанному выше номеру.</h3>
         <div class="form__box">
@@ -204,11 +204,18 @@
     </section>
 
     <footer class="footer">
+        <nav class="footer__nav">
+            <a class="footer__link" href="index.html">О нас</a>
+            <a class="footer__link" href="services.html">Услуги</a>
+            <a class="footer__link" href="portfolio.html">Наши работы</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+        </nav>
         <span class="footer-text">© All Rights Reserved 2024</span>
     </footer>
     <script type="module" src="swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="form.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

@@ -13,10 +13,11 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
 
 <body>
-    <header class="header center">
+    <header class="header center padding">
         <a href="index.html"><img src="img/logo.svg" alt="mainlogo" class="header__mainlogo"></a>
 
         <nav class="header__nav">
@@ -27,13 +28,13 @@
         </nav>
         <div class="header__contacts">
             <div class="header__adress">Санкт-Петербург<br>пер. Детский, 5Д<br>пр-кт Юрия Гагарина, 32к6</div>
-            <div class="header__number">+79119948474</div>
+            <div class="header__number">+79117571001</div>
             <div class="header__medias">
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-insta.svg" alt="instagram"
+                <a href="#" class="header__media"><img src="/img/instagram.svg" alt="instagram"
                         class="header__media-logo"></a>
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-watsapp.svg" alt="watsapp"
+                <a href="#" class="header__media"><img src="/img/watsapp.svg" alt="watsapp"
                         class="header__media-logo"></a>
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-youtube.svg" alt="youtube"
+                <a href="#" class="header__media"><img src="/img/youtube.svg" alt="youtube"
                         class="header__media-logo"></a>
             </div>
         </div>
@@ -44,6 +45,7 @@
         <h1 class="top__title">Студия карбона в Санкт-Петербурге <span style="color: #FFD9BB;">RB&nbsp;Carbon</span>
         </h1>
     </div>
+
 
     <main class="main center">
         <h2 class="about__title">Готовые работы и отзывы клиентов</h2>
@@ -59,7 +61,7 @@
                     dignissimos at facere quam earum error. Suscipit delectus ratione provident mollitia ad!
                 </p>
                 <div class="portfolio__imgs-swiper">
-                    <div class="swiper">
+                    <div class="swiper portfolioSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img class="portfolio__swiper-img" src="/img/portfolio-img2-1.jpg" alt="photo">
@@ -121,7 +123,7 @@
                 </h3>
 
                 <div class="portfolio__imgs-swiper">
-                    <div class="swiper">
+                    <div class="swiper portfolioSwiper">
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
@@ -178,14 +180,18 @@
             </div>
     </main>
 
-    <div class="feedback">
-        <img src="/img/feedback.jpg" alt="feedbacks">
-    </div>
 
     <footer class="footer">
+        <nav class="footer__nav">
+            <a class="footer__link" href="index.html">О нас</a>
+            <a class="footer__link" href="services.html">Услуги</a>
+            <a class="footer__link" href="portfolio.html">Наши работы</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+        </nav>
         <span class="footer-text">© All Rights Reserved 2024</span>
     </footer>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="form.js"></script>
+    <script src="script.js"></script>
     <script type="module" src="swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>

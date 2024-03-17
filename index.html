@@ -12,12 +12,13 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
 
 <!-- Изменить данные почты и сообщения в php, в мобильной версии добавить бургер меню, сделать полный адаптив, добавить ссылки на медиа в header -->
 
 <body>
-    <header class="header center padding">
+    <header class="header center padding" id="header-index">
         <a href="index.html"><img src="img/logo.svg" alt="mainlogo" class="header__mainlogo"></a>
 
         <nav class="header__nav">
@@ -28,19 +29,19 @@
         </nav>
         <div class="header__contacts">
             <div class="header__adress">Санкт-Петербург<br>пер. Детский, 5Д<br>пр-кт Юрия Гагарина, 32к6</div>
-            <div class="header__number">+79119948474</div>
+            <div class="header__number">+79117571001</div>
             <div class="header__medias">
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-insta.svg" alt="instagram"
+                <a href="#" class="header__media"><img src="/img/instagram.svg" alt="instagram"
                         class="header__media-logo"></a>
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-watsapp.svg" alt="watsapp"
+                <a href="#" class="header__media"><img src="/img/watsapp.svg" alt="watsapp"
                         class="header__media-logo"></a>
-                <a href="#" class="header__media"><img src="/img/nav-media-logo-youtube.svg" alt="youtube"
+                <a href="#" class="header__media"><img src="/img/youtube.svg" alt="youtube"
                         class="header__media-logo"></a>
             </div>
         </div>
     </header>
 
-    <div class="top">
+    <div class="top" id="top-index">
         <img src="/img/top-background3.jpg" alt="background" class="top__background">
         <h1 class="top__title">Студия карбона в Санкт-Петербурге <span style="color: #FFD9BB;">RB&nbsp;Carbon</span>
         </h1>
@@ -87,7 +88,7 @@
                 <img src="/img/about-img1.jpg" alt="about-img1" class="about__img">
                 <img src="/img/about-img2.jpg" alt="about-img2" class="about__img">
             </div>
-            <a href="#form" class="about__button">Получить консультацию</a>
+            <a href="#form" class="about__button pulsate-fwd">Получить консультацию</a>
         </section>
 
         <section class="advantages">
@@ -127,7 +128,7 @@
     </main>
 
     <section class="form center padding">
-        <h3 class="form__heading">Вы можете получить бесплатную консультацию от наших ведущих специалистов,
+        <h3 class="form__heading">Получите бесплатную консультацию от наших ведущих специалистов,
             оставив
             заявку на сайте или позвонив нам по указанному выше номеру.</h3>
         <div class="form__box">
@@ -162,9 +163,16 @@
     </section>
 
     <footer class="footer">
+        <nav class="footer__nav">
+            <a class="footer__link" href="index.html">О нас</a>
+            <a class="footer__link" href="services.html">Услуги</a>
+            <a class="footer__link" href="portfolio.html">Наши работы</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+        </nav>
         <span class="footer-text">© All Rights Reserved 2024</span>
     </footer>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="form.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
