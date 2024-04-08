@@ -39,7 +39,7 @@
   
 
 /* Анимация появления заголовка в top при загрузке страницы*/
-.tracking-in-expand {
+/* .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
@@ -67,9 +67,9 @@
       opacity: 1;
     }
   }
-  
+   */
 /* Анимация появления контента в main при загрузке страницы */
-.scale-up-center {
+/* .scale-up-center {
 	-webkit-animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -94,4 +94,4 @@
             transform: scale(1);
   }
 }
-
+ */

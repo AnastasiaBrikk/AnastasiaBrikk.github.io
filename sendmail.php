@@ -14,7 +14,7 @@ $mail->isHTML(true);
 $mail->setFrom('nastya.proskuryakova.98@mail.ru', 'Сногинова Анастасия');
 
 //to
-$mail->addAddress('nahua.proskuryakova.98@gmail.com');
+$mail->addAddress('nashua.proskuryakova.98@gmail.com');
 // rbcustomrussia@gmail.com
 
 //theme
