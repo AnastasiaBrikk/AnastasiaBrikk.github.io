@@ -91,18 +91,34 @@ a {
 }
 .top__background {
   width: 100%;
+  height: calc(100vh - 230px);
+}
+.top__background-contacts {
+  display: none;
 }
 .top__title {
   width: 100%;
   position: absolute;
   top: 40%;
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 53px;
   color: #FF8526;
-  font-optical-sizing: auto;
+  font-family: "Prosto One", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
   text-align: center;
+}
+.top__title-contacts {
+  display: none;
+}
+.top__studio-name {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 70px;
+  padding-top: 10px;
 }
 
 .about__title {
@@ -590,6 +606,12 @@ a {
   letter-spacing: 2;
   line-height: 26px;
   padding-bottom: 20px;
+}
+
+.main-contacts {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-image: url(/img/bg_about_block.jpg);
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
