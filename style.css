@@ -68,7 +68,8 @@ a {
 }
 .header .menu {
   position: absolute;
-  display: flex;
+  visibility: hidden;
+  display: none;
   flex-direction: column;
   gap: 30px;
   top: 0;
@@ -129,14 +130,17 @@ a {
 .top__background {
   width: 100%;
   height: calc(100vh - 230px);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .top__background-contacts {
   display: none;
 }
 .top__title {
   width: 100%;
+  -webkit-text-stroke: 0.5px #151515;
   position: absolute;
-  top: 40%;
+  top: 35%;
   font-size: 53px;
   color: #FF8526;
   font-family: "Prosto One", sans-serif;
@@ -149,6 +153,7 @@ a {
   display: none;
 }
 .top__studio-name {
+  -webkit-text-stroke: 0px;
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -707,7 +712,12 @@ a {
     font-size: 18px;
   }
   .top__title {
-    font-size: 29px;
+    font-size: 35px;
+    font-optical-sizing: auto;
+    top: 26%;
+  }
+  .top__studio-name {
+    font-size: 53px;
   }
   .header {
     flex-wrap: wrap;
@@ -816,10 +826,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-    min-width: 200px;
-    padding: 16px 11px;
-    margin: 20px auto;
+    font-size: 16px;
+    min-width: 198px;
+    padding: 20px 11px;
+    margin: 20px 15px;
   }
   .about__imgs {
     margin-bottom: 70px;
@@ -893,6 +903,10 @@ a {
     top: 30px;
     right: 25px;
   }
+  .header .menu {
+    visibility: visible;
+    display: flex;
+  }
   .menu.show {
     padding-top: 40px;
     padding-bottom: 30px;
@@ -907,8 +921,12 @@ a {
     right: 25px;
     cursor: pointer;
   }
-  .header__link {
+  .menu__link {
     font-size: 16px;
+    cursor: pointer;
+  }
+  .menu__link:hover {
+    color: #FF8526;
   }
   .header__contacts {
     flex-direction: column-reverse;
