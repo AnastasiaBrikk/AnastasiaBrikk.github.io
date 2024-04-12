@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги | RB Carbon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/3e3a22ec5c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&display=swap"
@@ -19,7 +20,7 @@
 <!-- Текстовое наполнение. Адаптив. -->
 
 <body>
-    <header class="header center padding">
+    <header class="header center padding" id="header-index">
         <a href="index.html"><img src="img/logo.svg" alt="mainlogo" class="header__mainlogo"></a>
 
         <nav class="header__nav">
@@ -28,6 +29,25 @@
             <a class="header__link" href="portfolio.html">Наши работы</a>
             <a class="header__link" href="contacts.html">Контакты</a>
         </nav>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <div class="menu" id="menu">
+            <i class="fa-solid fa-xmark fa-2xl closeMenu"></i>
+            <a class="menu__link" href="index.html">О нас</a>
+            <a class="menu__link menu__link_current" href="services.html">Услуги</a>
+            <a class="menu__link" href="portfolio.html">Наши работы</a>
+            <a class="menu__link" href="contacts.html">Контакты</a>
+            <div class="menu__medias">
+                <a href="#" class="header__media"><img src="/img/instagram.svg" alt="instagram"
+                        class="header__media-logo"></a>
+                <a href="#" class="header__media"><img src="/img/watsapp.svg" alt="watsapp"
+                        class="header__media-logo"></a>
+                <a href="#" class="header__media"><img src="/img/youtube.svg" alt="youtube"
+                        class="header__media-logo"></a>
+            </div>
+        </div>
+
         <div class="header__contacts">
             <div class="header__adress">Санкт-Петербург<br>пер. Детский, 5Д<br>пр-кт Юрия Гагарина, 32к6</div>
             <div class="header__number">+79117571001</div>

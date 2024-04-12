@@ -21,6 +21,7 @@ a {
 }
 
 .header {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,6 +57,42 @@ a {
 }
 .header__link_current:hover {
   color: #fff;
+}
+.header .fa-bars:before {
+  color: #FF8526;
+  cursor: pointer;
+}
+.header .hamburger {
+  display: none;
+  visibility: hidden;
+}
+.header .menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  top: 0;
+  right: -350px;
+  transition: all 0.3s ease-out;
+  background-color: #242424;
+  width: 300px;
+  padding: 43px 30px;
+  border-radius: 10px;
+}
+.header .menu__medias {
+  padding-top: 8px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.header .menu__link {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+.header .menu__link_current {
+  color: #FF8526;
 }
 .header__contacts {
   margin-top: 18px;
@@ -755,6 +792,14 @@ a {
   .footer span {
     font-size: 12px;
   }
+  .footer__link {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .footer__nav {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .about__blocks {
     justify-content: center;
     flex-direction: column;
@@ -825,34 +870,62 @@ a {
     font-size: 29px;
   }
   .header {
+    padding-top: 21px;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-    height: 160px;
+    min-height: 306px;
+    overflow: visible;
   }
   .header__mainlogo {
-    width: 100px;
+    width: 131px;
   }
   .header__nav {
-    gap: 5px;
-    width: 95%;
-    margin-bottom: 20px;
+    position: absolute;
+    left: -99999999px;
+    visibility: hidden;
   }
-  .header__adress {
-    display: none;
+  .header .hamburger {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+  }
+  .menu.show {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 100vw;
+    top: 0;
+    right: 0;
+  }
+  .closeMenu {
+    color: #FF8526;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    cursor: pointer;
   }
   .header__link {
     font-size: 16px;
   }
   .header__contacts {
-    visibility: hidden;
+    flex-direction: column-reverse;
+  }
+  .header__medias {
     position: absolute;
     left: -99999999px;
+    visibility: hidden;
   }
   .header__number {
-    font-size: 18px;
+    font-size: 22px;
+    text-align: center;
   }
   .header__adress {
     font-size: 14px;
+    text-align: center;
+    color: #D9D9D9;
+    letter-spacing: 1px;
   }
 }/*# sourceMappingURL=style.css.map */

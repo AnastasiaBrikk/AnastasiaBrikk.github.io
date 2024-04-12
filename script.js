@@ -15,3 +15,21 @@ window.addEventListener("load", () => {
 // window.addEventListener('load', () => {
 //     mainBox.classList.add("scale-up-center");
 // })
+
+// burger-menu mobile 
+const hamb = document.getElementById("hamburger");
+const closeIcon = document.querySelector(".closeMenu");
+hamb.addEventListener("click", hambHandler);
+closeIcon.addEventListener("click", closeMenu);
+function hambHandler(e) {
+  e.preventDefault();
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('show');
+}
+
+function closeMenu(e) {
+  e.preventDefault();
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('show');
+}
+
