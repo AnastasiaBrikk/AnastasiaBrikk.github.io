@@ -21,7 +21,6 @@ a {
 }
 
 .header {
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -885,8 +884,8 @@ a {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    min-height: 306px;
-    overflow: visible;
+    min-height: 322px;
+    overflow: hidden;
   }
   .header__mainlogo {
     width: 131px;
