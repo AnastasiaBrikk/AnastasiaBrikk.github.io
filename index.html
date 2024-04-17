@@ -24,11 +24,11 @@
     <!-- прелоадер -->
     <div class="preloader">
         <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path fill="currentColor"
-            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-          </path>
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
         </svg>
-      </div>
+    </div>
 
     <header class="header center padding" id="header-index">
         <a href="index.html"><img src="img/logo.svg" alt="mainlogo" class="header__mainlogo"></a>
@@ -53,8 +53,8 @@
                 <a class="menu__link" href="portfolio.html">Наши работы</a>
                 <a class="menu__link" href="contacts.html">Контакты</a>
                 <div class="menu__medias">
-                    <a href="https://www.instagram.com/rb_carbon_fiber_" target="_blank" class="header__media"><img src="/img/instagram.svg" alt="instagram"
-                            class="header__media-logo"></a>
+                    <a href="https://www.instagram.com/rb_carbon_fiber_" target="_blank" class="header__media"><img
+                            src="/img/instagram.svg" alt="instagram" class="header__media-logo"></a>
                     <a href="#" class="header__media"><img src="/img/watsapp.svg" alt="watsapp"
                             class="header__media-logo"></a>
                     <a href="#" class="header__media"><img src="/img/youtube.svg" alt="youtube"
@@ -67,8 +67,8 @@
             <div class="header__adress">Санкт-Петербург<br>пер. Детский, 5Д<br>пр-кт Юрия Гагарина, 32к6</div>
             <div class="header__number">+79117571001</div>
             <div class="header__medias">
-                <a href="https://www.instagram.com/rb_carbon_fiber_" target="_blank" class="header__media"><img src="/img/instagram.svg" alt="instagram"
-                        class="header__media-logo"></a>
+                <a href="https://www.instagram.com/rb_carbon_fiber_" target="_blank" class="header__media"><img
+                        src="/img/instagram.svg" alt="instagram" class="header__media-logo"></a>
                 <a href="#" class="header__media"><img src="/img/watsapp.svg" alt="watsapp"
                         class="header__media-logo"></a>
                 <a href="#" class="header__media"><img src="/img/youtube.svg" alt="youtube"
@@ -188,16 +188,16 @@
                 <img class="form__car" src="/img/form-img.svg" alt="car">
             </div>
             <div class="form__right">
-                <form action="#" method="post" id="form" class="form__body">
+                <form method="post" id="form" class="form__body">
                     <h2 class="form__title">Оставьте заявку и получите скидку 5% на первое посещение!</h2>
                     <div class="form__item">
-                        <input class="form__input _req" type="text" name="name" placeholder="Имя">
+                        <input class="form__input _req" type="text" name="Имя" placeholder="Имя">
                     </div>
                     <div class="form__item">
-                        <input class="form__input _req" type="text" placeholder="Номер телефона" name="number">
+                        <input class="form__input _req" type="tel" placeholder="Номер телефона" name="Телефон">
                     </div>
                     <div class="form__item">
-                        <input class="form__input" type="email" placeholder="Электронная почта" name="email">
+                        <input class="form__input" type="email" placeholder="Электронная почта" name="E-mail">
                     </div>
                     <div class="checkbox">
                         <input type="checkbox" id="formagreement" checked name="agreement"
@@ -206,8 +206,11 @@
                             обработку моих персональных данных</label>
 
                     </div>
-
                     <button class="form__button" type="submit">Отправить</button>
+
+                    <input type="hidden" name="project_name" value="RB Carbon">
+                    <input type="hidden" name="admin_email" value="nastya.proskuryakova.98@mail.ru">
+                    <input type="hidden" name="form_subject" value="Форма-заявка с сайта RB Carbon">
                 </form>
             </div>
         </div>
@@ -222,7 +225,7 @@
         </nav>
         <span class="footer-text">© All Rights Reserved 2024</span>
     </footer>
-    <script type="module" src="form.js"></script>
+    <!-- <script type="module" src="form.js"></script> -->
     <script src="script.js"></script>
 </body>
 

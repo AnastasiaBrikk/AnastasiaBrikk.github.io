@@ -1,19 +1,11 @@
 "use strict";
 
-// const topTitle = document.querySelector("#top-index");
-// window.addEventListener("load", () => {
-//   topTitle.classList.add("tracking-in-expand");
-// });
-
+// Header animation
 const header = document.querySelector("#header-index");
 window.addEventListener("load", () => {
   header.classList.add("scale-in-ver-top");
 });
 
-// const mainBox = document.querySelector("main");
-// window.addEventListener('load', () => {
-//     mainBox.classList.add("scale-up-center");
-// })
 
 // burger-menu mobile
 const hamb = document.getElementById("hamburger");
@@ -33,7 +25,6 @@ function closeMenu(e) {
 }
 
 //preloader
-
 window.onload = function () {
   document.body.classList.add("loaded_hiding");
   window.setTimeout(function () {
@@ -41,3 +32,37 @@ window.onload = function () {
     document.body.classList.remove("loaded_hiding");
   }, 500);
 };
+
+
+
+// FormData
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ajaxSend = async (formData) => {
+      const response = await fetch("mail.php", {
+          method: "POST",
+          body: formData
+      });
+      if (!response.ok) {
+          throw new Error(`Ошибка по адресу ${url}, статус ошибки ${response.status}`);
+      }
+      return await response.text();
+  };
+
+  if (document.querySelector("form")) {
+      const forms = document.querySelectorAll("form");
+      forms.forEach(form => {
+          form.addEventListener("submit", function (e) {
+              e.preventDefault();
+              const formData = new FormData(this);
+
+              ajaxSend(formData)
+                  .then((response) => {
+                      console.log(response);
+                      form.reset(); // очищаем поля формы
+                  })
+                  .catch((err) => console.error(err))
+          });
+      });
+  }
+});

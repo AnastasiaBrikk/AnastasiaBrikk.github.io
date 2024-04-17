@@ -75,7 +75,7 @@
 
     <div class="top">
         <img src="/img/bgc-top-carbon.jpg" alt="background" class="top__background">
-        <h1 class="top__title">Студия карбона в Санкт-Петербурге <p class="top__studio-name">RB&nbsp;Carbon</p>
+        <h1 class="top__title">Услуги студии<p class="top__studio-name">RB&nbsp;Carbon</p>
         </h1>
     </div>
 
@@ -93,19 +93,19 @@
                                 <div class="swiper-slide"><img class="services__swiper-img"
                                         src="/img/services-img-11.jpg" alt="Image 1"></div>
                                 <div class="swiper-slide"><img class="services__swiper-img"
-                                        src="/img/services-img12.jpg" alt="Image 1"></div>
+                                        src="/img/services-img12.jpg" alt="Image 2"></div>
                                 <div class="swiper-slide"><img class="services__swiper-img"
-                                        src="/img/services-img13.jpg" alt="Image 1"></div>
+                                        src="/img/services-img13.jpg" alt="Image 3"></div>
                                 <div class="swiper-slide"><img class="services__swiper-img"
-                                        src="/img/services-img14.jpg" alt="Image 1"></div>
+                                        src="/img/services-img14.jpg" alt="Image 4"></div>
                                 <div class="swiper-slide"><img class="services__swiper-img"
-                                        src="/img/services-item2.jpg" alt="Image 1"></div>
+                                        src="/img/services-item2.jpg" alt="Image 5"></div>
                                 <div class="swiper-slide"><img class="services__swiper-img"
-                                        src="/img/services-img15.jpg" alt="Image 2"></div>
+                                        src="/img/services-img15.jpg" alt="Image 6"></div>
                                 <div class="swiper-slide"><img class="services__swiper-img"
-                                        src="/img/services-img16.jpg" alt="Image 2"></div>
+                                        src="/img/services-img16.jpg" alt="Image 7"></div>
                                 <div class="swiper-slide"><img class="services__swiper-img"
-                                        src="/img/services-img2-3.jpg" alt="Image 3"></div>
+                                        src="/img/services-img2-3.jpg" alt="Image 8"></div>
                             </div>
 
                             <div class="swiper-button-prev"></div>
@@ -223,16 +223,16 @@
                 <img class="form__car" src="/img/form-img.svg" alt="car">
             </div>
             <div class="form__right">
-                <form action="#" method="post" id="form" class="form__body">
+                <form method="post" id="form" class="form__body">
                     <h2 class="form__title">Оставьте заявку и получите скидку 5% на первое посещение!</h2>
                     <div class="form__item">
-                        <input class="form__input _req" type="text" name="name" placeholder="Имя">
+                        <input class="form__input _req" type="text" name="Имя" placeholder="Имя">
                     </div>
                     <div class="form__item">
-                        <input class="form__input _req" type="text" placeholder="Номер телефона" name="number">
+                        <input class="form__input _req" type="tel" placeholder="Номер телефона" name="Телефон">
                     </div>
                     <div class="form__item">
-                        <input class="form__input" type="email" placeholder="Электронная почта" name="email">
+                        <input class="form__input" type="email" placeholder="Электронная почта" name="E-mail">
                     </div>
                     <div class="checkbox">
                         <input type="checkbox" id="formagreement" checked name="agreement"
@@ -241,8 +241,11 @@
                             обработку моих персональных данных</label>
 
                     </div>
-
                     <button class="form__button" type="submit">Отправить</button>
+
+                    <input type="hidden" name="project_name" value="RB Carbon">
+                    <input type="hidden" name="admin_email" value="nastya.proskuryakova.98@mail.ru">
+                    <input type="hidden" name="form_subject" value="Форма-заявка с сайта RB Carbon">
                 </form>
             </div>
         </div>
@@ -259,7 +262,7 @@
     </footer>
     <script type="module" src="swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="form.js"></script>
+    <!-- <script type="module" src="form.js"></script> -->
     <script src="script.js"></script>
 
 </body>

@@ -15,7 +15,9 @@ body {
     color: #fff;
 }
 
-//прелоадер
+
+
+//прелоадер для страниц
 
 .preloader {
     position: fixed;
@@ -27,9 +29,9 @@ body {
     /* фоновый цвет */
     background: #e0e0e0;
     z-index: 1001;
-  }
-  
-  .preloader__image {
+}
+
+.preloader__image {
     position: relative;
     top: 50%;
     left: 50%;
@@ -39,22 +41,22 @@ body {
     margin-left: -35px;
     text-align: center;
     animation: preloader-rotate 2s infinite linear;
-  }
-  
-  @keyframes preloader-rotate {
+}
+
+@keyframes preloader-rotate {
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  .loaded_hiding .preloader {
+}
+
+.loaded_hiding .preloader {
     transition: 0.3s opacity;
     opacity: 0;
-  }
-  
-  .loaded .preloader {
+}
+
+.loaded .preloader {
     display: none;
-  }
+}
 
 .center {
     padding-left: calc(50% - 570px);
@@ -1021,6 +1023,7 @@ a {
             font-size: 16px;
         }
     }
+
     //contacts
 
     .contact__box {
@@ -1230,6 +1233,7 @@ a {
 
     .header__mainlogo {
         width: 131px;
+
         &:hover {
             transform: none;
         }
