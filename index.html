@@ -141,8 +141,16 @@
             </ol>
             <a href="#form" class="about__button pulsate-fwd">Получить консультацию</a>
             <div class="about__imgs">
-                <img src="/img/about-img1.jpg" alt="about-img1" class="about__img">
-                <img src="/img/about-img2.jpg" alt="about-img2" class="about__img">
+                <picture class="about__img">
+                    <source type="image/webp" srcset="/img/about-img1.webp">
+                    <source type="image/jpeg" srcset="/img/about-img1.jpg">
+                    <img src="/img/about-img1.jpg" alt="about-img1">
+                </picture>
+                <picture class="about__img">
+                    <source type="image/webp" srcset="/img/about-img2.webp">
+                    <source type="image/jpeg" srcset="/img/about-img2.jpg">
+                    <img src="/img/about-img2.jpg" alt="about-img2">
+                </picture>
             </div>
 
         </section>
