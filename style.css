@@ -642,7 +642,25 @@ a {
   color: #fff;
   line-height: 30px;
   letter-spacing: 5;
-  padding: 50px 60px;
+  padding: 25px 60px;
+}
+.portfolio__details summary {
+  padding: 30px 60px;
+  font-size: 20px;
+  color: #FF8526;
+  line-height: 30px;
+  letter-spacing: 5;
+  cursor: pointer;
+}
+.portfolio__details summary:hover {
+  color: #FFC93D;
+}
+.portfolio__details p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 5;
+  padding: 25px 60px;
 }
 .portfolio__hr {
   width: 100%;
@@ -1122,6 +1140,12 @@ a {
     padding: 100px 0;
   }
   .portfolio__dsc {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 30px;
+    text-align: justify;
+  }
+  .portfolio__details p {
     font-size: 16px;
     line-height: 25px;
     padding: 30px;
