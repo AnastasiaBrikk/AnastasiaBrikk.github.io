@@ -32,11 +32,7 @@ if (isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true):
 
         <label for="about_description2">About Description 2:</label>
         <textarea id="about_description2" name="about_description2"><?php echo $data['about_description2']; ?></textarea><br><br>
-
-        <button type="submit">Сохранить</button>
-    </form>
-    <br>
-    <form action="save.php" method="post">
+        
         <label for="price_list_title">Price List Title:</label>
         <input type="text" id="price_list_title" name="price_list_title" value="<?php echo $data['price_list_title']; ?>"><br><br>
 

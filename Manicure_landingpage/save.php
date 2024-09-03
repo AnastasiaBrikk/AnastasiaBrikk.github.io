@@ -7,18 +7,6 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
     exit();
 }
 
-// // Получаем данные из формы и сохраняем их в JSON файл
-// $data = [
-//     'about_title' => $_POST['about_title'],
-//     'about_description1' => $_POST['about_description1'],
-//     'about_description2' => $_POST['about_description2'],
-// ];
-
-// file_put_contents('data.json', json_encode($data));
-
-// // Возвращаем пользователя на страницу администрирования
-// header('Location: local.php');
-
 
 $data = [
     'about_title' => $_POST['about_title'],
