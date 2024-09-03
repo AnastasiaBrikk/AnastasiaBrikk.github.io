@@ -1,89 +1,150 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
-  header {
-    position: fixed;
-    width: 100%;
-    background-color: #fff;
-    z-index: 1000;
-    padding: 0;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  nav ul li {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #e91e63; /* Нежно-розовый цвет */
-  }
-  
-  .mainLogo a {
-    font-size: 32px;
-    color: #e91e63;
-  }
-  
-  .mainLogo a:hover {
-    color: #333;
-  }
-  
-  .app main {
-    padding-top: 80px; /* Отступ, чтобы компенсировать фиксированный хедер */
-  }
-  
-  .section {
-    padding-top: 40px;
-  }
-  
-  .section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .section p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  /* Стили для разных секций */
+  scroll-behavior: smooth;
+}
 
+/* Фиксированный хедер */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Навигационное меню */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e91e63;
+}
+
+.mainLogo a {
+  font-size: 32px;
+  color: #e91e63;
+}
+
+.mainLogo a:hover {
+  color: #333;
+}
+
+.app main {
+  padding-top: 80px; /* Отступ для фиксированного хедера */
+}
+
+/* Основные секции */
+.section {
+  padding-top: 40px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Стиль для секции "About" */
 #about-section {
   padding: 0;
 }
-  
+
+/* Подвал */
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивные стили */
+
+/* Для планшетов */
+@media (max-width: 1024px) {
+  nav ul {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .mainLogo a {
+      font-size: 28px;
+  }
+
+  .section h2 {
+      font-size: 28px;
+  }
+
+  .section p {
+      font-size: 16px;
+  }
+
+  .app main {
+      padding-top: 70px;
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  nav ul li {
+      font-size: 16px;
+  }
+
+  .mainLogo a {
+      font-size: 24px;
+  }
+
+  .section h2 {
+      font-size: 24px;
+  }
+
+  .section p {
+      font-size: 14px;
+  }
+
+  .app main {
+      padding-top: 60px;
+  }
 
   footer {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #555;
-    margin-top: 40px;
+      font-size: 12px;
+      padding: 15px;
   }
-  
-  footer a {
-    color: #e91e63;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
+}

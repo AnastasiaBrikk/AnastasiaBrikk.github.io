@@ -486,3 +486,109 @@ main {
 .scroll-to-top.show {
   opacity: 1;
 }
+
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для десктопа остаются без изменений */
+
+@media (max-width: 1024px) {
+  /* Планшеты */
+  nav ul {
+    flex-direction: column;
+    margin: 16px 50px;
+    gap: 20px;
+  }
+
+  .gallery {
+    padding: 20px 40px;
+  }
+
+  .price-list {
+    padding: 20px 80px;
+  }
+
+  .contacts {
+    padding: 20px 80px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+
+  .image-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Мобильные устройства */
+  nav ul {
+    flex-direction: column;
+    margin: 16px 20px;
+    gap: 10px;
+  }
+
+  .price-list {
+    padding: 20px 20px;
+  }
+
+  .gallery {
+    padding: 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .gallery-item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contacts {
+    padding: 20px;
+  }
+
+  .contacts-title, .price-list-title, .gallery-title {
+    font-size: 1.5rem;
+  }
+
+  .contacts-info {
+    text-align: left;
+  }
+
+  .social-media-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
